@@ -1,21 +1,71 @@
 html {
-    height: 100%;
-    width: 100%;
-  }
-  
-  div, button {
-    margin: 4px;
-    font-size:larger;
-  }
-  
-  .footer {
-    margin: 0;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: #EEEEEE;
-    
-  }
-  
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  /* https://www.programiz.com/css/radial-gradient */
+  background-image: radial-gradient(circle 350px, #FEFFFE, #cacaca);
+}
+
+button {
+  margin: 10px;
+  font-size: 1.2em;
+  padding: 10px 20px;
+}
+
+
+button {
+  border: 2px solid #333;
+  background-color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+span {
+  padding: 10px;
+  font-size: 45px;
+  border: 2px solid #333;
+  background-color: #fff;
+}
+
+.footer {
+  margin: 0;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #EEEEEE;
+}
+
+/* the bob-up css effect makes the counter bigger....*/
+span.bob-up {
+  transform: scale(1.1);
+  background-color: rgb(24, 221, 24);
+  /* copied DIRECTLY from here https://www.turing.com/kb/upscale-your-website-with-the-box-shadow-property */
+  box-shadow: 0px 6px 11px 0px rgba(0, 0, 0, 0.8); 
+
+}
+
+/* or smaller, depending on if you click add or remove*/
+span.bob-down {
+  transform: scale(0.9);
+  background-color: rgb(255, 72, 72);
+    /* copied DIRECTLY from here https://www.turing.com/kb/upscale-your-website-with-the-box-shadow-property */
+  box-shadow: 0px 6px 11px 0px rgba(0, 0, 0, 0.8); 
+
+
+}
